@@ -1,6 +1,5 @@
 body {
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
+    background-image: url("assets/texture-background1.jpg");
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -8,13 +7,23 @@ body {
     text-align: center;
 }
 
+#headArea {
+    color: white;
+    background-color: black ;
+    padding-top: 50px;
+    margin-top: -50px;
+    margin-right: -20px;
+    margin-left: -20px;
+    border: 1px solid white;
+    opacity: 0.8;
+}
 #quoteBox {
     margin: auto;
     width: 30%;
-    margin-top: 15%;
+    margin-top: 10%;
     padding: 100px;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.8;
     border-radius: 20px;
 }
 
@@ -39,12 +48,34 @@ body {
     margin-bottom: -15%;
     margin-left: 100%;
     margin-right: -15%;
-    background-color: white;
-    width: 15%;
+    width: 80px;
     text-align: center;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
+    border: 2px solid white;
+    opacity: 1;
+    color: white;
     border-radius: 20px;
+}
+
+#quoteButton:hover {
+    opacity: 0.8;
+}
+
+#tweetButton {
+    float: left;
+    display: inline;
+    margin-top: 10%;
+    margin-bottom: -15%;
+}
+
+#twitterIcon {
+    width: auto;
+    height: 35px;
+    border-radius: 10px;
+}
+#twitterIcon:hover {
+    opacity: 0.8;
 }
 
 a:link{
@@ -52,5 +83,6 @@ a:link{
 }
 
 #footer {
+    margin-top: 5%;
     text-align: center;
 }

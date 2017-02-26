@@ -16,5 +16,5 @@ function tweetQuote() {
     var quote = $('#message').text() + $('#author').text();
     quote = encodeURIComponent(quote);
     
-    $("#tweetButton").html('<a target="_blank" href="https://twitter.com/intent/tweet?text=' + quote + '">Tweet</a>');  
+    $("#tweetButton").html('<a target="_blank" href="https://twitter.com/intent/tweet?text=' + quote + '"><img src="assets/twitter_icon.svg" id="twitterIcon"></i></a>');  
 }
