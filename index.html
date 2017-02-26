@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Using quote API from https://quotesondesign.com/api-v4-0/
+-->
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Montserrat" rel="stylesheet">
+    <script src="scripts.js"></script>
+    
+    <title>Quote Machine - By Josh Amore</title>
+</head>
+
+<body>
+    <h1 class="center">QuoteTown</h1>
+    <h2 class="center">Generate a random quote.</h2>
+    
+    <div id="quoteBox">
+        <div id="message">
+            <p id="qText">...</p>
+        </div>
+        <div id="tweetButton"></div>
+        <div id="author"></div>
+        <a href="#" onclick="getQuote();"><div id="quoteButton" >Get Quote</div></a>
+    </div>
+    <footer id="footer">Coded by Josh Amore.</footer>
+</body>
+</html>

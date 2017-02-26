@@ -1,0 +1,56 @@
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+#quoteBox {
+    margin: auto;
+    width: 30%;
+    margin-top: 15%;
+    padding: 100px;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+#message {
+    color: white;
+    font-style: italic;
+}
+
+#qText {
+    font-size: 2em;
+    font-family: 'Droid Serif', serif;
+}
+
+#author {
+    color: white;
+    font-size: 1.2em;
+    text-align: right;
+}
+
+#quoteButton {
+    margin-top: 10%;
+    margin-bottom: -15%;
+    margin-left: 100%;
+    margin-right: -15%;
+    background-color: white;
+    width: 15%;
+    text-align: center;
+    font-family: 'Droid Serif', serif;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+
+a:link{
+  text-decoration: none!important;
+}
+
+#footer {
+    text-align: center;
+}
