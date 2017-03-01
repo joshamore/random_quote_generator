@@ -9,7 +9,7 @@ function tweetQuote() {
 
 // This function pulls the quote from an API. 
 function getQuote() {    
-    var url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback";
+    var url = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback";
     $.ajax({
         url: url,
         type: 'GET',
