@@ -1,19 +1,4 @@
-/*
-    This function pulls the quote from an API. 
-    
-    // Below callback is not working (with &callback=? attached.).
-*/
-function getQuote() {
-    $.ajaxSetup({ cache: false });
-    var url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=";
-    $.getJSON(url, null, function(quoteResults) {
-        document.getElementById('message').innerHTML = quoteResults[0].content;
-        document.getElementById('author').innerHTML = "- " + quoteResults[0].title;
-        tweetQuote();
-        
-    });
-}
-
+// Creates the tweet button.
 function tweetQuote() {
     var quote = $('#message').text() + $('#author').text();
     quote = encodeURIComponent(quote);
@@ -22,17 +7,14 @@ function tweetQuote() {
 }
 
 
-
-
-// Not working alt attempt at API request. 
-/*
-    var url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=";
+// This function pulls the quote from an API. 
+function getQuote() {    
+    var url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback";
     $.ajax({
         url: url,
         type: 'GET',
-        dataType: 'json',
-        crossDomain: true,
-        headers: { 'Access-Control-Allow-Origin' : 'url' },
+        dataType: 'jsonp',
+        jsonpCallback: "mycallback",
         success: function (quoteResults) {
             document.getElementById('message').innerHTML = quoteResults[0].content;
             document.getElementById('author').innerHTML = "- " + quoteResults[0].title;
@@ -40,4 +22,4 @@ function tweetQuote() {
 
         }
     });
-*/
+}
