@@ -1,12 +1,23 @@
+/********************************
+Body and General
+********************************/
 body {
     background-image: url("assets/texture-background1.jpg");
     font-family: 'Montserrat', sans-serif;
+}
+
+a:link{
+  text-decoration: none!important;
 }
 
 .center {
     text-align: center;
 }
 
+
+/********************************
+Header Section
+********************************/
 #headArea {
     color: white;
     background-color: black ;
@@ -17,6 +28,11 @@ body {
     border: 1px solid white;
     opacity: 0.8;
 }
+
+
+/********************************
+Quote Section
+********************************/
 #quoteBox {
     margin: auto;
     width: 30%;
@@ -26,12 +42,10 @@ body {
     opacity: 0.8;
     border-radius: 20px;
 }
-
 #message {
     color: white;
     font-style: italic;
 }
-
 #qText {
     font-size: 2em;
     font-family: 'Droid Serif', serif;
@@ -41,6 +55,21 @@ body {
     color: white;
     font-size: 1.2em;
     text-align: right;
+}
+
+#tweetButton {
+    float: left;
+    display: inline;
+    margin-top: 10%;
+    margin-bottom: -15%;
+}
+#twitterIcon {
+    width: auto;
+    height: 35px;
+    border-radius: 10px;
+}
+#twitterIcon:hover {
+    opacity: 0.8;
 }
 
 #quoteButton {
@@ -57,31 +86,14 @@ body {
     color: white;
     border-radius: 20px;
 }
-
 #quoteButton:hover {
     opacity: 0.8;
 }
 
-#tweetButton {
-    float: left;
-    display: inline;
-    margin-top: 10%;
-    margin-bottom: -15%;
-}
 
-#twitterIcon {
-    width: auto;
-    height: 35px;
-    border-radius: 10px;
-}
-#twitterIcon:hover {
-    opacity: 0.8;
-}
-
-a:link{
-  text-decoration: none!important;
-}
-
+/********************************
+Footer Section
+********************************/
 #footer {
     margin-top: 5%;
     text-align: center;
